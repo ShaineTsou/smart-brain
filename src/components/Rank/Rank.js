@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Rank = () => {
+const Rank = ({name, entries}) => {
     return(
         <div>
             <div className='f3 white-70'>
-                {'Shaine, your current rank is ...'}
+                <strong className='f2'><em>{name}</em></strong>
+                {`, your current entry count is ...`}
             </div>
             <div className='f1 fw6 white'>
-                {'#3'}
+                {entries}
             </div>
         </div>
     );
